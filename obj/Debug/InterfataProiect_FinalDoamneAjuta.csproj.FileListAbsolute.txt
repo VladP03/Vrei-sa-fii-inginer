@@ -8,3 +8,13 @@ C:\Users\thecr\source\repos\InterfataProiect_FinalDoamneAjuta\obj\Debug\Interfat
 C:\Users\thecr\source\repos\InterfataProiect_FinalDoamneAjuta\obj\Debug\InterfataProiect_FinalDoamneAjuta.csproj.CoreCompileInputs.cache
 C:\Users\thecr\source\repos\InterfataProiect_FinalDoamneAjuta\obj\Debug\InterfataProiect_FinalDoamneAjuta.exe
 C:\Users\thecr\source\repos\InterfataProiect_FinalDoamneAjuta\obj\Debug\InterfataProiect_FinalDoamneAjuta.pdb
+P:\Facultate\Proiect IP2\Vrei-sa-fii-inginer\bin\Debug\InterfataProiect_FinalDoamneAjuta.exe.config
+P:\Facultate\Proiect IP2\Vrei-sa-fii-inginer\bin\Debug\InterfataProiect_FinalDoamneAjuta.exe
+P:\Facultate\Proiect IP2\Vrei-sa-fii-inginer\bin\Debug\InterfataProiect_FinalDoamneAjuta.pdb
+P:\Facultate\Proiect IP2\Vrei-sa-fii-inginer\obj\Debug\InterfataProiect_FinalDoamneAjuta.csprojAssemblyReference.cache
+P:\Facultate\Proiect IP2\Vrei-sa-fii-inginer\obj\Debug\InterfataProiect_FinalDoamneAjuta.Form1.resources
+P:\Facultate\Proiect IP2\Vrei-sa-fii-inginer\obj\Debug\InterfataProiect_FinalDoamneAjuta.Properties.Resources.resources
+P:\Facultate\Proiect IP2\Vrei-sa-fii-inginer\obj\Debug\InterfataProiect_FinalDoamneAjuta.csproj.GenerateResource.cache
+P:\Facultate\Proiect IP2\Vrei-sa-fii-inginer\obj\Debug\InterfataProiect_FinalDoamneAjuta.csproj.CoreCompileInputs.cache
+P:\Facultate\Proiect IP2\Vrei-sa-fii-inginer\obj\Debug\InterfataProiect_FinalDoamneAjuta.exe
+P:\Facultate\Proiect IP2\Vrei-sa-fii-inginer\obj\Debug\InterfataProiect_FinalDoamneAjuta.pdb
