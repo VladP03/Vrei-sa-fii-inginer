@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace InterfataProiect_FinalDoamneAjuta
+namespace InterfataQuestions
 {
-    public partial class Form1 : Form
+    public partial class FormQuestions : Form
     {
-        public Form1()
+        public FormQuestions()
         {
             InitializeComponent();
         }

@@ -1,7 +1,7 @@
 ﻿
-namespace InterfataProiect_FinalDoamneAjuta
+namespace InterfataQuestions
 {
-    partial class Form1
+    partial class FormQuestions
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace InterfataProiect_FinalDoamneAjuta
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormQuestions));
             this.labelMaterie = new System.Windows.Forms.Label();
             this.labelIntrebare = new System.Windows.Forms.Label();
             this.pictureBoxRaspuns1 = new System.Windows.Forms.PictureBox();
