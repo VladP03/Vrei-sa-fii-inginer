@@ -44,7 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connection\Conexiune.cs" />
+    <Compile Include="Connection\Connection.cs" />
     <Compile Include="Entities\Questions.cs" />
     <Compile Include="Exceptions\Conexiune\ConnectionException.cs" />
     <Compile Include="Exceptions\Conexiune\SelectAllFromException.cs" />

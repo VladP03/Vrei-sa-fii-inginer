@@ -1,11 +1,17 @@
-﻿using System;
+﻿/* * * * * * * * * * * * * * * * * * * * * * * * *
+ *          Owner: Paraschiv Vlad                *
+ * * * * * * * * * * * * * * * * * * * * * * * * */
 
-namespace BazeDeDate.Exceptions
+using System;
+
+namespace DataBase.Exceptions
 {
     public class ConnectionException : Exception
     {
+        #region Constructor
         public ConnectionException(string message) : base(message)
         {
         }
+        #endregion
     }
 }

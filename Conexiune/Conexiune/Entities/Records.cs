@@ -1,15 +1,20 @@
-﻿
+﻿/* * * * * * * * * * * * * * * * * * * * * * * * *
+ *          Owner: Paraschiv Vlad                *
+ * * * * * * * * * * * * * * * * * * * * * * * * */
 
-namespace BazeDeDate.Entities
+namespace DataBase.Entities
 {
     public class Records
     {
+        #region Fields
         private int _id;
         private string _name;
         private string _email;
         private int _points;
         private object _date_finish;
+        #endregion
 
+        #region Constructor
         public Records(int id, string name, string email, int points, object date_finish)
         {
             _id = id;
@@ -18,7 +23,9 @@ namespace BazeDeDate.Entities
             _points = points;
             _date_finish = date_finish;
         }
+        #endregion
 
+        #region Getters
         public int Id
         {
             get
@@ -57,5 +64,6 @@ namespace BazeDeDate.Entities
                 return _date_finish;
             }
         }
+        #endregion
     }
 }

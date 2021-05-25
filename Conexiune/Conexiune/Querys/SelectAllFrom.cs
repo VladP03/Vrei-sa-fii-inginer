@@ -1,15 +1,20 @@
-﻿using BazeDeDate.Entities;
-using BazeDeDate.Exceptions;
-using BazeDeDate.Connection;
+﻿/* * * * * * * * * * * * * * * * * * * * * * * * *
+ *          Owner: Paraschiv Vlad                *
+ * * * * * * * * * * * * * * * * * * * * * * * * */
+
+using DataBase.Entities;
+using DataBase.Exceptions;
+using DataBase.ConnectionToOracleDB;
 using Oracle.ManagedDataAccess.Client;
 using System;
 using System.Collections.Generic;
 
-namespace BazeDeDate.Querys
+namespace DataBase.Querys
 {
     public class SelectAll
     {
-        public static List<Records> FromRecords(Conexiune connection)
+        #region Public Static Methods
+        public static List<Records> FromRecords(Connection connection)
         {
             try
             {
@@ -37,7 +42,7 @@ namespace BazeDeDate.Querys
             }
         }
 
-        public static List<Questions> FromQuestions(Conexiune connection)
+        public static List<Questions> FromQuestions(Connection connection)
         {
             try
             {
@@ -65,5 +70,6 @@ namespace BazeDeDate.Querys
                 throw new SelectAllFromException("PROBLEM WITH selectAllFromQuestions");
             }
         }
+        #endregion
     }
 }

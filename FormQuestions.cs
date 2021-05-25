@@ -9,16 +9,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 // Baze de date
-using BazeDeDate.Connection;
-using BazeDeDate.Entities;
-using BazeDeDate.Exceptions;
-using BazeDeDate.Querys;
+using DataBase.ConnectionToOracleDB;
+using DataBase.Entities;
+using DataBase.Exceptions;
+using DataBase.Querys;
 
 namespace InterfataQuestions
 {
     public partial class FormQuestions : Form
     {
-        private Conexiune _connectionToOracleDB = null;
+        private Connection _connectionToOracleDB = null;
 
         public FormQuestions()
         {
@@ -26,11 +26,13 @@ namespace InterfataQuestions
 
             try
             {
-                _connectionToOracleDB = Conexiune.createConnection();
-                MessageBox.Show("Succes");
+                _connectionToOracleDB = Connection.createConnection();
+                Console.WriteLine("asda");
 
                 List<Records> records = SelectAll.FromRecords(_connectionToOracleDB);
                 List<Questions> questions = SelectAll.FromQuestions(_connectionToOracleDB);
+
+
 
                 labelMaterie.Text = questions[0].Course;
                 labelIntrebare.Text = questions[0].Title;

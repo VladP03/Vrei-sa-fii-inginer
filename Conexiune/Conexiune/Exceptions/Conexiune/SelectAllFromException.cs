@@ -1,12 +1,18 @@
-﻿using System;
+﻿/* * * * * * * * * * * * * * * * * * * * * * * * *
+ *          Owner: Paraschiv Vlad                *
+ * * * * * * * * * * * * * * * * * * * * * * * * */
 
-namespace BazeDeDate.Exceptions
+using System;
+
+namespace DataBase.Exceptions
 {
     public class SelectAllFromException : Exception
     {
+        #region Constructor
         public SelectAllFromException(string message) : base(message)
         {
 
         }
+        #endregion
     }
 }
