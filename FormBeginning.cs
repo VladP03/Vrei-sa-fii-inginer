@@ -14,7 +14,7 @@ namespace InterfataQuestions
         {
             FormQuestions formQuestions = new FormQuestions();
             formQuestions.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void buttonExit_Click(object sender, EventArgs e)
@@ -26,7 +26,7 @@ namespace InterfataQuestions
         {
             FormRecords formRecords = new FormRecords();
             formRecords.Show();
-            this.Close();
+            this.Hide();
         }
     }
 }
