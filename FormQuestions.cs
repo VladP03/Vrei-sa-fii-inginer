@@ -27,12 +27,9 @@ namespace InterfataQuestions
             try
             {
                 _connectionToOracleDB = Connection.createConnection();
-                Console.WriteLine("asda");
 
                 List<Records> records = SelectAll.FromRecords(_connectionToOracleDB);
                 List<Questions> questions = SelectAll.FromQuestions(_connectionToOracleDB);
-
-
 
                 labelMaterie.Text = questions[0].Course;
                 labelIntrebare.Text = questions[0].Title;
