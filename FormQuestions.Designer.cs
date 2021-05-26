@@ -40,7 +40,7 @@ namespace InterfataQuestions
             this.buttonRaspuns2 = new System.Windows.Forms.Button();
             this.buttonRaspuns3 = new System.Windows.Forms.Button();
             this.buttonRaspuns4 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelTimer = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRaspuns1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRaspuns3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRaspuns2)).BeginInit();
@@ -179,15 +179,15 @@ namespace InterfataQuestions
             this.buttonRaspuns4.Text = "Raspunsul la intrebare ar trebui sa fie....";
             this.buttonRaspuns4.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // labelTimer
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(729, 86);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 29);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.labelTimer.AutoSize = true;
+            this.labelTimer.Location = new System.Drawing.Point(729, 86);
+            this.labelTimer.Name = "labelTimer";
+            this.labelTimer.Size = new System.Drawing.Size(79, 29);
+            this.labelTimer.TabIndex = 22;
+            this.labelTimer.Text = "label1";
+            this.labelTimer.Click += new System.EventHandler(this.labelTimer_Click);
             // 
             // FormQuestions
             // 
@@ -196,7 +196,7 @@ namespace InterfataQuestions
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1540, 845);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelTimer);
             this.Controls.Add(this.buttonRaspuns4);
             this.Controls.Add(this.buttonRaspuns3);
             this.Controls.Add(this.buttonRaspuns2);
@@ -238,7 +238,7 @@ namespace InterfataQuestions
         private System.Windows.Forms.Button buttonRaspuns2;
         private System.Windows.Forms.Button buttonRaspuns3;
         private System.Windows.Forms.Button buttonRaspuns4;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelTimer;
     }
 }
 

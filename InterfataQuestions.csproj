@@ -56,14 +56,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormBeginning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBeginning.Designer.cs">
+      <DependentUpon>FormBeginning.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormQuestions.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormQuestions.Designer.cs">
       <DependentUpon>FormQuestions.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormRecords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRecords.Designer.cs">
+      <DependentUpon>FormRecords.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormBeginning.resx">
+      <DependentUpon>FormBeginning.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormQuestions.resx">
       <DependentUpon>FormQuestions.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,4 +107,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>(if exist "$(TargetDir)*old.pdb" del "$(TargetDir)*old.pdb") &amp; (if exist "$(TargetDir)*.pdb" ren "$(TargetDir)*.pdb" *.old.pdb)
+</PreBuildEvent>
+  </PropertyGroup>
 </Project>
