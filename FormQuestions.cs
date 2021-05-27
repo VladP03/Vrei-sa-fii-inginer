@@ -71,13 +71,18 @@ namespace InterfataQuestions
 
         private void Refresh(int index)
         {
-
-            //labelMaterie.Text = _questions[index].Course;
-            labelIntrebare.Text = _questions[index].Title;
-            buttonRaspuns1.Text = _questions[index].Right_answer;
-            buttonRaspuns2.Text = _questions[index].Wrong_answer1;
-            buttonRaspuns3.Text = _questions[index].Wrong_answer2;
-            buttonRaspuns4.Text = _questions[index].Wrong_answer3;
+            if (_countQuestion < 30)
+            {
+                labelMaterie.Text = _questions[index].Course;
+                labelIntrebare.Text = _questions[index].Title;
+                buttonRaspuns1.Text = _questions[index].Right_answer;
+                buttonRaspuns2.Text = _questions[index].Wrong_answer1;
+                buttonRaspuns3.Text = _questions[index].Wrong_answer2;
+                buttonRaspuns4.Text = _questions[index].Wrong_answer3;
+            } else
+            {
+                this.Close();
+            }
         }
 
         private void buttonRaspuns1_Click(object sender, EventArgs e)
@@ -86,17 +91,11 @@ namespace InterfataQuestions
             {
                 _rightAnswers++;
             }
-            else
-            {
-                labelMaterie.Text = "NU1";
-            }
-
-            MessageBox.Show(_rightAnswers.ToString());
 
             _countQuestion++;
 
-            FormQuestions temp = new FormQuestions();
-            temp.Show();
+            FormQuestions nextQuestion = new FormQuestions();
+            nextQuestion.Show();
             this.Hide();
         }
 
@@ -107,10 +106,12 @@ namespace InterfataQuestions
                 _rightAnswers++;
                 labelMaterie.Text = "DA2";
             }
-            else
-            {
-                labelMaterie.Text = "NU2";
-            }
+
+            _countQuestion++;
+
+            FormQuestions nextQuestion = new FormQuestions();
+            nextQuestion.Show();
+            this.Hide();
         }
 
         private void buttonRaspuns3_Click(object sender, EventArgs e)
@@ -120,10 +121,12 @@ namespace InterfataQuestions
                 _rightAnswers++;
                 labelMaterie.Text = "DA3";
             }
-            else
-            {
-                labelMaterie.Text = "NU3";
-            }
+
+            _countQuestion++;
+
+            FormQuestions nextQuestion = new FormQuestions();
+            nextQuestion.Show();
+            this.Hide();
         }
 
         private void buttonRaspuns4_Click(object sender, EventArgs e)
@@ -133,10 +136,12 @@ namespace InterfataQuestions
                 _rightAnswers++;
                 labelMaterie.Text = "DA4";
             }
-            else
-            {
-                labelMaterie.Text = "NU4";
-            }
+
+            _countQuestion++;
+
+            FormQuestions nextQuestion = new FormQuestions();
+            nextQuestion.Show();
+            this.Hide();
         }
     }
 }
