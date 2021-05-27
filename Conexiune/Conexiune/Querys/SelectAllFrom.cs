@@ -22,14 +22,14 @@ namespace DataBase.Querys
                 List<Records> records = new List<Records>();
 
                 OracleCommand command = new OracleCommand(
-                    "Select * FROM records WHERE ROWNUM <=3 ORDER BY points DESC",
+                    "Select * FROM records ORDER BY points DESC",
                     connectionString);
 
                 using (OracleDataReader reader = command.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        Records temp = new Records(reader.GetInt32(0), reader.GetString(1), reader.GetString(2), reader.GetInt32(3), reader.GetValue(3));
+                        Records temp = new Records(reader.GetInt32(0), reader.GetString(1), reader.GetInt32(2));
                         records.Add(temp);
                     }
                 }

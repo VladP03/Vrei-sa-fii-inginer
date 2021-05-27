@@ -33,7 +33,8 @@ namespace InterfataQuestions
             this.textBoxPuncte = new System.Windows.Forms.TextBox();
             this.buttonMain = new System.Windows.Forms.Button();
             this.textBoxUsername = new System.Windows.Forms.TextBox();
-            this.textBoxUseremail = new System.Windows.Forms.TextBox();
+            this.labelPuncte = new System.Windows.Forms.Label();
+            this.labelUsername = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonExit
@@ -48,7 +49,7 @@ namespace InterfataQuestions
             // 
             // textBoxPuncte
             // 
-            this.textBoxPuncte.Location = new System.Drawing.Point(276, 41);
+            this.textBoxPuncte.Location = new System.Drawing.Point(276, 71);
             this.textBoxPuncte.Name = "textBoxPuncte";
             this.textBoxPuncte.Size = new System.Drawing.Size(100, 20);
             this.textBoxPuncte.TabIndex = 1;
@@ -65,24 +66,36 @@ namespace InterfataQuestions
             // 
             // textBoxUsername
             // 
-            this.textBoxUsername.Location = new System.Drawing.Point(248, 86);
+            this.textBoxUsername.Location = new System.Drawing.Point(252, 130);
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.Size = new System.Drawing.Size(165, 20);
             this.textBoxUsername.TabIndex = 3;
             // 
-            // textBoxUseremail
+            // labelPuncte
             // 
-            this.textBoxUseremail.Location = new System.Drawing.Point(248, 143);
-            this.textBoxUseremail.Name = "textBoxUseremail";
-            this.textBoxUseremail.Size = new System.Drawing.Size(165, 20);
-            this.textBoxUseremail.TabIndex = 4;
+            this.labelPuncte.AutoSize = true;
+            this.labelPuncte.Location = new System.Drawing.Point(298, 55);
+            this.labelPuncte.Name = "labelPuncte";
+            this.labelPuncte.Size = new System.Drawing.Size(41, 13);
+            this.labelPuncte.TabIndex = 5;
+            this.labelPuncte.Text = "Puncte";
+            // 
+            // labelUsername
+            // 
+            this.labelUsername.AutoSize = true;
+            this.labelUsername.Location = new System.Drawing.Point(308, 114);
+            this.labelUsername.Name = "labelUsername";
+            this.labelUsername.Size = new System.Drawing.Size(29, 13);
+            this.labelUsername.TabIndex = 6;
+            this.labelUsername.Text = "User";
             // 
             // FormFinish
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBoxUseremail);
+            this.Controls.Add(this.labelUsername);
+            this.Controls.Add(this.labelPuncte);
             this.Controls.Add(this.textBoxUsername);
             this.Controls.Add(this.buttonMain);
             this.Controls.Add(this.textBoxPuncte);
@@ -101,6 +114,7 @@ namespace InterfataQuestions
         private System.Windows.Forms.TextBox textBoxPuncte;
         private System.Windows.Forms.Button buttonMain;
         private System.Windows.Forms.TextBox textBoxUsername;
-        private System.Windows.Forms.TextBox textBoxUseremail;
+        private System.Windows.Forms.Label labelPuncte;
+        private System.Windows.Forms.Label labelUsername;
     }
 }

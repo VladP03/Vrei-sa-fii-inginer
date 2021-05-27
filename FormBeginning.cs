@@ -26,7 +26,7 @@ namespace InterfataQuestions
         {
             FormRecords formRecords = new FormRecords();
             formRecords.Show();
-            this.Close();
+            this.Hide();
         }
     }
 }

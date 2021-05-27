@@ -37,7 +37,7 @@ namespace InterfataQuestions
             // 
             // buttonPlay
             // 
-            this.buttonPlay.Location = new System.Drawing.Point(533, 121);
+            this.buttonPlay.Location = new System.Drawing.Point(415, 168);
             this.buttonPlay.Name = "buttonPlay";
             this.buttonPlay.Size = new System.Drawing.Size(75, 23);
             this.buttonPlay.TabIndex = 0;
@@ -47,7 +47,7 @@ namespace InterfataQuestions
             // 
             // buttonRecords
             // 
-            this.buttonRecords.Location = new System.Drawing.Point(533, 189);
+            this.buttonRecords.Location = new System.Drawing.Point(415, 247);
             this.buttonRecords.Name = "buttonRecords";
             this.buttonRecords.Size = new System.Drawing.Size(75, 23);
             this.buttonRecords.TabIndex = 1;
@@ -57,7 +57,7 @@ namespace InterfataQuestions
             // 
             // buttonHelp
             // 
-            this.buttonHelp.Location = new System.Drawing.Point(533, 250);
+            this.buttonHelp.Location = new System.Drawing.Point(415, 320);
             this.buttonHelp.Name = "buttonHelp";
             this.buttonHelp.Size = new System.Drawing.Size(75, 23);
             this.buttonHelp.TabIndex = 2;
@@ -66,7 +66,7 @@ namespace InterfataQuestions
             // 
             // buttonExit
             // 
-            this.buttonExit.Location = new System.Drawing.Point(533, 328);
+            this.buttonExit.Location = new System.Drawing.Point(415, 392);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(75, 23);
             this.buttonExit.TabIndex = 3;

@@ -8,10 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// Baze de date
+using DataBase.ConnectionToOracleDB;
+using DataBase.Entities;
+using DataBase.Exceptions;
+using DataBase.Querys;
+
 namespace InterfataQuestions
 {
     public partial class FormFinish : Form
     {
+        private Connection _connectionToOracleDB = null;
+
         public FormFinish(int puncte)
         {
             InitializeComponent();
@@ -22,12 +30,51 @@ namespace InterfataQuestions
         private void buttonExit_Click(object sender, EventArgs e)
         {
             // de bagat in baza de date scor, username si email
+            try
+            {
+                _connectionToOracleDB = Connection.createConnection();
+                string name = textBoxUsername.Text;
+                int points = Convert.ToInt32(this.textBoxPuncte.Text);
+
+                InsertInto.Records(_connectionToOracleDB, name, points);
+
+            }
+            catch (ConnectionException exception)
+            {
+                MessageBox.Show(exception.Message);
+                return;
+            }
+            catch (InsertIntoException exception)
+            {
+                MessageBox.Show(exception.Message);
+                return;
+            }
+
             Application.Exit();
         }
 
         private void buttonMain_Click(object sender, EventArgs e)
         {
             // de bagat in baza de date scor, username si email
+            try
+            {
+                _connectionToOracleDB = Connection.createConnection();
+                string name = textBoxUsername.Text;
+                int points = Convert.ToInt32(this.textBoxPuncte.Text);
+
+                InsertInto.Records(_connectionToOracleDB, name, points);
+
+            }
+            catch (ConnectionException exception)
+            {
+                MessageBox.Show(exception.Message);
+                return;
+            }
+            catch (InsertIntoException exception)
+            {
+                MessageBox.Show(exception.Message);
+                return;
+            } 
 
             FormBeginning formBeginning = new FormBeginning();
             formBeginning.Show();
