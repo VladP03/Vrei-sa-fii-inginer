@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfataQuestions", "Inter
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BazeDeDate", "Conexiune\Conexiune\BazeDeDate.csproj", "{B5EACA5B-D2B2-478B-834F-4C7BB984362E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shuffle", "Shuffle\Shuffle.csproj", "{5CB6A7CE-7A31-4FAB-9D29-D657B220191F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B5EACA5B-D2B2-478B-834F-4C7BB984362E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5EACA5B-D2B2-478B-834F-4C7BB984362E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5EACA5B-D2B2-478B-834F-4C7BB984362E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CB6A7CE-7A31-4FAB-9D29-D657B220191F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CB6A7CE-7A31-4FAB-9D29-D657B220191F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CB6A7CE-7A31-4FAB-9D29-D657B220191F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CB6A7CE-7A31-4FAB-9D29-D657B220191F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

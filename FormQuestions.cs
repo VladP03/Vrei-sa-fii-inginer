@@ -14,17 +14,22 @@ using DataBase.Entities;
 using DataBase.Exceptions;
 using DataBase.Querys;
 
+// Shuffle
+using Shuffle;
+
 namespace InterfataQuestions
 {
     public partial class FormQuestions : Form
     {
         private Connection _connectionToOracleDB = null;
-        private List<Questions> _questions = null;
+        private static List<Questions> _questions = null;
         private static int _countQuestion = 0;
         private static int _rightAnswers = 0;
 
         private const int _numberOfQuestions = 3;
-        private int time = 29;
+        private int _secondsForQuestions = 5;
+        private Timer _timer = null;
+        
         public FormQuestions()
         {
             InitializeComponent();
@@ -34,10 +39,15 @@ namespace InterfataQuestions
             {
                 _connectionToOracleDB = Connection.createConnection();
 
-                //List<Records> records = SelectAll.FromRecords(_connectionToOracleDB);
-                _questions = SelectAll.FromQuestions(_connectionToOracleDB);
+                if (_questions == null)
+                {
+                    _questions = SelectAll.FromQuestions(_connectionToOracleDB);
+                    Randomizare.Shuffle(_questions);
+                }
 
-                Refresh(_countQuestion);
+                //List<Records> records = SelectAll.FromRecords(_connectionToOracleDB);
+                ShowMaterieIntrebareRaspunsuri(_countQuestion);
+
             }
             catch (ConnectionException exception)
             {
@@ -50,31 +60,64 @@ namespace InterfataQuestions
                 return;
             }
 
-            Timer t = new Timer();
+            _timer = new Timer();
 
-            t.Interval = 1000;
-            t.Tick += new EventHandler(labelTimer_Click);
-            t.Start();
+            _timer.Interval = 1000;
+            _timer.Tick += new EventHandler(labelTimer_Click);
+            _timer.Start();
         }
 
         private void labelTimer_Click(object sender, EventArgs e)
         {
-            if (time >= 10)
-                labelTimer.Text = "00:" + time.ToString();
+            if (_secondsForQuestions >= 10)
+            {
+                labelTimer.Text = "00:" + _secondsForQuestions.ToString();
+            }
             else
-                labelTimer.Text = "00:0" + time.ToString();
-            if (time > 0)
-                --time;
+            {
+                labelTimer.Text = "00:0" + _secondsForQuestions.ToString();
+            }
+
+            if (_secondsForQuestions == -1 && _countQuestion == _numberOfQuestions)
+            {
+                FormFinish formFinish = new FormFinish(_rightAnswers);
+                formFinish.Show();
+                this.Close();
+            } 
+            else if (_secondsForQuestions == -1)
+            {
+                nextQuestion();
+            }
+
+            _secondsForQuestions--;
         }
 
-        private void Refresh(int index)
+        private void ShowMaterieIntrebareRaspunsuri(int index)
         {
-                labelMaterie.Text = _questions[index].Course;
-                labelIntrebare.Text = _questions[index].Title;
-                buttonRaspuns1.Text = _questions[index].Right_answer;
-                buttonRaspuns2.Text = _questions[index].Wrong_answer1;
-                buttonRaspuns3.Text = _questions[index].Wrong_answer2;
-                buttonRaspuns4.Text = _questions[index].Wrong_answer3;
+            List<string> shuffleAnswers = new List<string>();
+            shuffleAnswers.Add(_questions[index].Wrong_answer1);
+            shuffleAnswers.Add(_questions[index].Wrong_answer2);
+            shuffleAnswers.Add(_questions[index].Wrong_answer3);
+            shuffleAnswers.Add(_questions[index].Wrong_answer4);
+            shuffleAnswers.Add(_questions[index].Wrong_answer5);
+            shuffleAnswers.Add(_questions[index].Wrong_answer6);
+
+            Randomizare.ShuffleAnswers(shuffleAnswers);
+
+            shuffleAnswers.RemoveAt(0);
+            shuffleAnswers.RemoveAt(1);
+            shuffleAnswers.RemoveAt(2);
+
+            shuffleAnswers.Add(_questions[index].Right_answer);
+
+            Randomizare.ShuffleAnswers(shuffleAnswers);
+
+            labelMaterie.Text = _questions[index].Course;
+            labelIntrebare.Text = _questions[index].Title;
+            buttonRaspuns1.Text = shuffleAnswers.ElementAt(0);
+            buttonRaspuns2.Text = shuffleAnswers.ElementAt(1);
+            buttonRaspuns3.Text = shuffleAnswers.ElementAt(2);
+            buttonRaspuns4.Text = shuffleAnswers.ElementAt(3);
         }
 
         private void buttonRaspuns1_Click(object sender, EventArgs e)
@@ -86,18 +129,11 @@ namespace InterfataQuestions
 
             if (_countQuestion == _numberOfQuestions)
             {
-                FormFinish formFinish = new FormFinish(_rightAnswers);
-                formFinish.Show();
-                this.Close();
+                lastQuestion();
             }
             else
             {
-
-                _countQuestion++;
-
-                FormQuestions nextQuestion = new FormQuestions();
-                nextQuestion.Show();
-                this.Hide();
+                nextQuestion();
             }
         }
 
@@ -110,18 +146,11 @@ namespace InterfataQuestions
 
             if (_countQuestion == _numberOfQuestions)
             {
-                FormFinish formFinish = new FormFinish(_rightAnswers);
-                formFinish.Show();
-                this.Close();
+                lastQuestion();
             }
             else
             {
-
-                _countQuestion++;
-
-                FormQuestions nextQuestion = new FormQuestions();
-                nextQuestion.Show();
-                this.Hide();
+                nextQuestion();
             }
         }
 
@@ -134,17 +163,11 @@ namespace InterfataQuestions
 
             if (_countQuestion == _numberOfQuestions)
             {
-                FormFinish formFinish = new FormFinish(_rightAnswers);
-                formFinish.Show();
-                this.Close();
+                lastQuestion();
             }
             else
             {
-                _countQuestion++;
-
-                FormQuestions nextQuestion = new FormQuestions();
-                nextQuestion.Show();
-                this.Hide();
+                nextQuestion();
             }
         }
 
@@ -157,20 +180,34 @@ namespace InterfataQuestions
 
             if (_countQuestion == _numberOfQuestions)
             {
-                FormFinish formFinish = new FormFinish(_rightAnswers);
-                formFinish.Show();
-                this.Close();
+                lastQuestion();
             }
             else
             {
-
-                _countQuestion++;
-
-                FormQuestions nextQuestion = new FormQuestions();
-                nextQuestion.Show();
-                this.Hide();
+                nextQuestion();
             }
 
+        }
+
+        private void nextQuestion()
+        {
+            _countQuestion++;
+
+            FormQuestions nextQuestion = new FormQuestions();
+            _timer.Stop();
+            nextQuestion.Show();
+            this.Hide();
+        }
+
+        private void lastQuestion()
+        {
+            FormFinish formFinish = new FormFinish(_rightAnswers);
+            _timer.Stop();
+            formFinish.Show();
+            this.Close();
+
+            _rightAnswers = 0;
+            _countQuestion = 0;
         }
     }
 }

@@ -21,7 +21,17 @@ namespace InterfataQuestions
 
         private void buttonExit_Click(object sender, EventArgs e)
         {
+            // de bagat in baza de date scor, username si email
             Application.Exit();
+        }
+
+        private void buttonMain_Click(object sender, EventArgs e)
+        {
+            // de bagat in baza de date scor, username si email
+
+            FormBeginning formBeginning = new FormBeginning();
+            formBeginning.Show();
+            this.Close();
         }
     }
 }
