@@ -1,7 +1,7 @@
 ﻿
 namespace InterfataQuestions
 {
-    partial class FormRecords
+    partial class FormFinish
     {
         /// <summary>
         /// Required designer variable.
@@ -29,33 +29,45 @@ namespace InterfataQuestions
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonExit = new System.Windows.Forms.Button();
+            this.textBoxPuncte = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonExit
             // 
-            this.button1.Location = new System.Drawing.Point(369, 334);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonExit.Location = new System.Drawing.Point(387, 333);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(75, 23);
+            this.buttonExit.TabIndex = 0;
+            this.buttonExit.Text = "Exit";
+            this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
-            // FormRecords
+            // textBoxPuncte
+            // 
+            this.textBoxPuncte.Location = new System.Drawing.Point(301, 100);
+            this.textBoxPuncte.Name = "textBoxPuncte";
+            this.textBoxPuncte.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPuncte.TabIndex = 1;
+            // 
+            // FormFinish
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBoxPuncte);
+            this.Controls.Add(this.buttonExit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormRecords";
-            this.Text = "FormRecords";
+            this.Name = "FormFinish";
+            this.Text = "FormFinish";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonExit;
+        private System.Windows.Forms.TextBox textBoxPuncte;
     }
 }

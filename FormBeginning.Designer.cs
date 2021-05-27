@@ -78,11 +78,12 @@ namespace InterfataQuestions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1373, 745);
+            this.ClientSize = new System.Drawing.Size(1010, 595);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonHelp);
             this.Controls.Add(this.buttonRecords);
             this.Controls.Add(this.buttonPlay);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormBeginning";
             this.Text = "FormBeginning";
             this.ResumeLayout(false);

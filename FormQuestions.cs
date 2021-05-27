@@ -23,6 +23,7 @@ namespace InterfataQuestions
         private static int _countQuestion = 0;
         private static int _rightAnswers = 0;
 
+        private const int _numberOfQuestions = 3;
         private int time = 29;
         public FormQuestions()
         {
@@ -37,7 +38,6 @@ namespace InterfataQuestions
                 _questions = SelectAll.FromQuestions(_connectionToOracleDB);
 
                 Refresh(_countQuestion);
-
             }
             catch (ConnectionException exception)
             {
@@ -50,13 +50,11 @@ namespace InterfataQuestions
                 return;
             }
 
-            /*
             Timer t = new Timer();
 
             t.Interval = 1000;
             t.Tick += new EventHandler(labelTimer_Click);
             t.Start();
-            */
         }
 
         private void labelTimer_Click(object sender, EventArgs e)
@@ -71,18 +69,12 @@ namespace InterfataQuestions
 
         private void Refresh(int index)
         {
-            if (_countQuestion < 30)
-            {
                 labelMaterie.Text = _questions[index].Course;
                 labelIntrebare.Text = _questions[index].Title;
                 buttonRaspuns1.Text = _questions[index].Right_answer;
                 buttonRaspuns2.Text = _questions[index].Wrong_answer1;
                 buttonRaspuns3.Text = _questions[index].Wrong_answer2;
                 buttonRaspuns4.Text = _questions[index].Wrong_answer3;
-            } else
-            {
-                this.Close();
-            }
         }
 
         private void buttonRaspuns1_Click(object sender, EventArgs e)
@@ -92,11 +84,21 @@ namespace InterfataQuestions
                 _rightAnswers++;
             }
 
-            _countQuestion++;
+            if (_countQuestion == _numberOfQuestions)
+            {
+                FormFinish formFinish = new FormFinish(_rightAnswers);
+                formFinish.Show();
+                this.Close();
+            }
+            else
+            {
 
-            FormQuestions nextQuestion = new FormQuestions();
-            nextQuestion.Show();
-            this.Hide();
+                _countQuestion++;
+
+                FormQuestions nextQuestion = new FormQuestions();
+                nextQuestion.Show();
+                this.Hide();
+            }
         }
 
         private void buttonRaspuns2_Click(object sender, EventArgs e)
@@ -104,14 +106,23 @@ namespace InterfataQuestions
             if (buttonRaspuns2.Text.Equals(_questions[_countQuestion].Right_answer))
             {
                 _rightAnswers++;
-                labelMaterie.Text = "DA2";
             }
 
-            _countQuestion++;
+            if (_countQuestion == _numberOfQuestions)
+            {
+                FormFinish formFinish = new FormFinish(_rightAnswers);
+                formFinish.Show();
+                this.Close();
+            }
+            else
+            {
 
-            FormQuestions nextQuestion = new FormQuestions();
-            nextQuestion.Show();
-            this.Hide();
+                _countQuestion++;
+
+                FormQuestions nextQuestion = new FormQuestions();
+                nextQuestion.Show();
+                this.Hide();
+            }
         }
 
         private void buttonRaspuns3_Click(object sender, EventArgs e)
@@ -119,14 +130,22 @@ namespace InterfataQuestions
             if (buttonRaspuns3.Text.Equals(_questions[_countQuestion].Right_answer))
             {
                 _rightAnswers++;
-                labelMaterie.Text = "DA3";
             }
 
-            _countQuestion++;
+            if (_countQuestion == _numberOfQuestions)
+            {
+                FormFinish formFinish = new FormFinish(_rightAnswers);
+                formFinish.Show();
+                this.Close();
+            }
+            else
+            {
+                _countQuestion++;
 
-            FormQuestions nextQuestion = new FormQuestions();
-            nextQuestion.Show();
-            this.Hide();
+                FormQuestions nextQuestion = new FormQuestions();
+                nextQuestion.Show();
+                this.Hide();
+            }
         }
 
         private void buttonRaspuns4_Click(object sender, EventArgs e)
@@ -134,14 +153,24 @@ namespace InterfataQuestions
             if (buttonRaspuns4.Text.Equals(_questions[_countQuestion].Right_answer))
             {
                 _rightAnswers++;
-                labelMaterie.Text = "DA4";
             }
 
-            _countQuestion++;
+            if (_countQuestion == _numberOfQuestions)
+            {
+                FormFinish formFinish = new FormFinish(_rightAnswers);
+                formFinish.Show();
+                this.Close();
+            }
+            else
+            {
 
-            FormQuestions nextQuestion = new FormQuestions();
-            nextQuestion.Show();
-            this.Hide();
+                _countQuestion++;
+
+                FormQuestions nextQuestion = new FormQuestions();
+                nextQuestion.Show();
+                this.Hide();
+            }
+
         }
     }
 }
