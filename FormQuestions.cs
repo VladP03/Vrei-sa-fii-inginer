@@ -50,11 +50,13 @@ namespace InterfataQuestions
                 return;
             }
 
+            /*
             Timer t = new Timer();
 
             t.Interval = 1000;
             t.Tick += new EventHandler(labelTimer_Click);
             t.Start();
+            */
         }
 
         private void labelTimer_Click(object sender, EventArgs e)
@@ -83,12 +85,13 @@ namespace InterfataQuestions
             if (buttonRaspuns1.Text.Equals(_questions[_countQuestion].Right_answer))
             {
                 _rightAnswers++;
-                labelMaterie.Text = "DA1";
             }
             else
             {
                 labelMaterie.Text = "NU1";
             }
+
+            MessageBox.Show(_rightAnswers.ToString());
 
             _countQuestion++;
 

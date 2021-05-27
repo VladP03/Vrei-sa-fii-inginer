@@ -133,6 +133,7 @@ namespace InterfataQuestions
             this.buttonRaspuns1.TabIndex = 18;
             this.buttonRaspuns1.Text = "Raspunsul la intrebare ar trebui sa fie....";
             this.buttonRaspuns1.UseVisualStyleBackColor = false;
+            this.buttonRaspuns1.Click += new System.EventHandler(this.buttonRaspuns1_Click);
             // 
             // buttonRaspuns2
             // 
@@ -148,6 +149,7 @@ namespace InterfataQuestions
             this.buttonRaspuns2.TabIndex = 19;
             this.buttonRaspuns2.Text = "Raspunsul la intrebare ar trebui sa fie....";
             this.buttonRaspuns2.UseVisualStyleBackColor = false;
+            this.buttonRaspuns2.Click += new System.EventHandler(this.buttonRaspuns2_Click);
             // 
             // buttonRaspuns3
             // 
@@ -163,6 +165,7 @@ namespace InterfataQuestions
             this.buttonRaspuns3.TabIndex = 20;
             this.buttonRaspuns3.Text = "Raspunsul la intrebare ar trebui sa fie....";
             this.buttonRaspuns3.UseVisualStyleBackColor = false;
+            this.buttonRaspuns3.Click += new System.EventHandler(this.buttonRaspuns3_Click);
             // 
             // buttonRaspuns4
             // 
@@ -178,6 +181,7 @@ namespace InterfataQuestions
             this.buttonRaspuns4.TabIndex = 21;
             this.buttonRaspuns4.Text = "Raspunsul la intrebare ar trebui sa fie....";
             this.buttonRaspuns4.UseVisualStyleBackColor = false;
+            this.buttonRaspuns4.Click += new System.EventHandler(this.buttonRaspuns4_Click);
             // 
             // labelTimer
             // 
