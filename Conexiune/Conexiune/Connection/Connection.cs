@@ -1,6 +1,18 @@
-﻿/* * * * * * * * * * * * * * * * * * * * * * * * *
- *          Owner: Paraschiv Vlad                *
- * * * * * * * * * * * * * * * * * * * * * * * * */
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        Connection.cs                                            *
+ *  Copyright:   (c) 2021, Paraschiv Florin-Vladut                        *
+ *  E-mail:      florin-vladut.paraschiv@student.tuiasi.ro                *
+ *  Description: Connection to Oracle database                            *
+ *                                                                        *
+ *                                                                        *
+ *  This code and information is provided "as is" without warranty of     *
+ *  any kind, either expressed or implied, including but not limited      *
+ *  to the implied warranties of merchantability or fitness for a         *
+ *  particular purpose. You are free to use this source code in your      *
+ *  applications as long as the original copyright notice is included.    *
+ *                                                                        *
+ **************************************************************************/
 
 using System;
 using DataBase.Exceptions;
@@ -27,7 +39,7 @@ namespace DataBase.ConnectionToOracleDB
 
         #region Public Static Method
         /// <summary>
-        /// Open the connection to the ORACLE DB with connection string
+        /// Open the connection to the Oracle DB with connection string
         /// Singleton Design Pattern used
         /// </summary>
         /// <returns> An singleton object used for create, close and get DB </returns>
@@ -53,7 +65,7 @@ namespace DataBase.ConnectionToOracleDB
 
         #region Public Method
         /// <summary>
-        /// Close connection with ORACLE db
+        /// Close connection with Oracle db
         /// </summary>
         public void closeConnection()
         {
@@ -74,7 +86,7 @@ namespace DataBase.ConnectionToOracleDB
 
         #region Getter
         /// <summary>
-        /// Return connection string for ORACLE db
+        /// Return connection string for Oracle db
         /// </summary>
         public OracleConnection ConnectionString
         {

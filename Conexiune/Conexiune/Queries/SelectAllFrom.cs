@@ -1,6 +1,18 @@
-﻿/* * * * * * * * * * * * * * * * * * * * * * * * *
- *          Owner: Paraschiv Vlad                *
- * * * * * * * * * * * * * * * * * * * * * * * * */
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        InsertInto.cs                                            *
+ *  Copyright:   (c) 2021, Paraschiv Florin-Vladut                        *
+ *  E-mail:      florin-vladut.paraschiv@student.tuiasi.ro                *
+ *  Description: Selecting data from database                             *
+ *                                                                        *
+ *                                                                        *
+ *  This code and information is provided "as is" without warranty of     *
+ *  any kind, either expressed or implied, including but not limited      *
+ *  to the implied warranties of merchantability or fitness for a         *
+ *  particular purpose. You are free to use this source code in your      *
+ *  applications as long as the original copyright notice is included.    *
+ *                                                                        *
+ **************************************************************************/
 
 using DataBase.Entities;
 using DataBase.Exceptions;
@@ -9,11 +21,16 @@ using Oracle.ManagedDataAccess.Client;
 using System;
 using System.Collections.Generic;
 
-namespace DataBase.Querys
+namespace DataBase.Queries
 {
     public class SelectAll
     {
         #region Public Static Methods
+        /// <summary>
+        /// Selecting name and points for hall of fame
+        /// </summary>
+        /// <param name="connection"> connection string for Oracle db </param>
+        /// <returns> An list of records </returns>
         public static List<Records> FromRecords(Connection connection)
         {
             try
@@ -42,6 +59,11 @@ namespace DataBase.Querys
             }
         }
 
+        /// <summary>
+        /// Selecting course, questions and answers from db
+        /// </summary>
+        /// <param name="connection"></param>
+        /// <returns> An list of questions </returns>
         public static List<Questions> FromQuestions(Connection connection)
         {
             try

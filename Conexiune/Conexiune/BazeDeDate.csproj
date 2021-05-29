@@ -47,12 +47,12 @@
     <Compile Include="Connection\Connection.cs" />
     <Compile Include="Entities\Questions.cs" />
     <Compile Include="Exceptions\Conexiune\ConnectionException.cs" />
-    <Compile Include="Exceptions\Querys\InsertIntoException.cs" />
-    <Compile Include="Exceptions\Querys\SelectAllFromException.cs" />
+    <Compile Include="Exceptions\Queries\InsertIntoException.cs" />
+    <Compile Include="Exceptions\Queries\SelectAllFromException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Entities\Records.cs" />
-    <Compile Include="Querys\InsertInto.cs" />
-    <Compile Include="Querys\SelectAllFrom.cs" />
+    <Compile Include="Queries\InsertInto.cs" />
+    <Compile Include="Queries\SelectAllFrom.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

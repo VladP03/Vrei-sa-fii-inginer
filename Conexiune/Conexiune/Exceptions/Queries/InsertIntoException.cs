@@ -1,9 +1,9 @@
 ﻿/**************************************************************************
  *                                                                        *
- *  File:        ConnectionException.cs                                   *
+ *  File:        InsertIntoException.cs                                   *
  *  Copyright:   (c) 2021, Paraschiv Florin-Vladut                        *
  *  E-mail:      florin-vladut.paraschiv@student.tuiasi.ro                *
- *  Description: Exception for connection to Oracle db                    *
+ *  Description: Exception for inserting into Oracle db                   *
  *                                                                        *
  *                                                                        *
  *  This code and information is provided "as is" without warranty of     *
@@ -18,15 +18,16 @@ using System;
 
 namespace DataBase.Exceptions
 {
-    public class ConnectionException : Exception
+    public class InsertIntoException : Exception
     {
         #region Constructor
         /// <summary>
         /// Public constructor
         /// </summary>
         /// <param name="message"> the message of the exception </param>
-        public ConnectionException(string message) : base(message)
+        public InsertIntoException(string message) : base(message)
         {
+
         }
         #endregion
     }

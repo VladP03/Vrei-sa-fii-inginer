@@ -1,9 +1,9 @@
 ﻿/**************************************************************************
  *                                                                        *
- *  File:        Records.cs                                               *
+ *  File:        InsertInto.cs                                            *
  *  Copyright:   (c) 2021, Paraschiv Florin-Vladut                        *
  *  E-mail:      florin-vladut.paraschiv@student.tuiasi.ro                *
- *  Description: Entity object who refer at records table in database     *
+ *  Description: Inserting data in database                               *
  *                                                                        *
  *                                                                        *
  *  This code and information is provided "as is" without warranty of     *
@@ -14,53 +14,43 @@
  *                                                                        *
  **************************************************************************/
 
-namespace DataBase.Entities
-{
-    public class Records
-    {
-        #region Fields
-        private int _id;
-        private string _name;
-        private int _points;
-        #endregion
+using DataBase.ConnectionToOracleDB;
+using Oracle.ManagedDataAccess.Client;
+using System;
+using DataBase.Exceptions;
+using System.Data;
 
-        #region Constructor
+namespace DataBase.Queries
+{
+    public class InsertInto
+    {
+        #region Public static methods
         /// <summary>
-        /// Public constructor for entity records
+        /// Insert player name and points into database
         /// </summary>
-        /// <param name="id">  for a better manipulation with dates </param>
+        /// <param name="connection"> connection string for Oracle db </param>
         /// <param name="name"> name of the player </param>
         /// <param name="points"> total points he get right </param>
-        public Records(int id, string name, int points)
+        public static void Records(Connection connection, string name, int points)
         {
-            _id = id;
-            _name = name;
-            _points = points;
-        }
-        #endregion
-
-        #region Getters
-        public int Id
-        {
-            get
+            try
             {
-                return _id;
+                OracleConnection connectionString = connection.ConnectionString;
+                OracleCommand command = connectionString.CreateCommand();
+                OracleTransaction transaction = connectionString.BeginTransaction(IsolationLevel.ReadCommitted);
+
+                command.Transaction = transaction;
+
+                command.CommandText = "INSERT INTO records(name, points) VALUES (\'" + name + "\', " + points + ")";
+
+                command.ExecuteNonQuery();
+
+                transaction.Commit();
+
             }
-        }
-
-        public string Name
-        {
-            get
+            catch (Exception)
             {
-                return _name;
-            }
-        }
-
-        public int Points
-        {
-            get
-            {
-                return _points;
+                throw new InsertIntoException("PROBLEM WITH InsertIntoRecords");
             }
         }
         #endregion

@@ -12,7 +12,7 @@ using System.Windows.Forms;
 using DataBase.ConnectionToOracleDB;
 using DataBase.Entities;
 using DataBase.Exceptions;
-using DataBase.Querys;
+using DataBase.Queries;
 
 namespace InterfataQuestions
 {
