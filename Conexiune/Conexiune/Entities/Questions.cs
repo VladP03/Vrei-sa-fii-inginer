@@ -8,7 +8,6 @@ namespace DataBase.Entities
     {
         #region Fields
         private int _id;
-        private string _difficulty;
         private string _course;
         private string _title;
         private string _right_answer;
@@ -21,10 +20,9 @@ namespace DataBase.Entities
         #endregion
 
         #region Constructor
-        public Questions(int id, string difficulty, string course, string title, string right_answer, string wrong_aswer1, string wrong_aswer2, string wrong_aswer3, string wrong_aswer4, string wrong_aswer5, string wrong_aswer6)
+        public Questions(int id, string course, string title, string right_answer, string wrong_aswer1, string wrong_aswer2, string wrong_aswer3, string wrong_aswer4, string wrong_aswer5, string wrong_aswer6)
         {
             _id = id;
-            _difficulty = difficulty;
             _course = course;
             _title = title;
             _right_answer = right_answer;
@@ -45,13 +43,7 @@ namespace DataBase.Entities
                 return _id;
             }
         }
-        public string Difficulty
-        {
-            get
-            {
-                return _difficulty;
-            }
-        }
+
         public string Course
         {
             get
