@@ -44,7 +44,7 @@
       <HintPath>packages\Oracle.ManagedDataAccess.19.11.0\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
     </Reference>
     <Reference Include="Shuffle">
-      <HintPath>Shuffle\bin\Release\Shuffle.dll</HintPath>
+      <HintPath>Shuffle\obj\Debug\Shuffle.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -120,6 +120,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Conexiune\Conexiune\BazeDeDate.csproj">
+      <Project>{b5eaca5b-d2b2-478b-834f-4c7bb984362e}</Project>
+      <Name>BazeDeDate</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

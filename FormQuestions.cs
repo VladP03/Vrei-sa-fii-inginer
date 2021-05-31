@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -208,6 +209,23 @@ namespace InterfataQuestions
 
             _rightAnswers = 0;
             _countQuestion = 0;
+        }
+
+        private void FormQuestions_Load(object sender, EventArgs e)
+        {
+            PrivateFontCollection pfc = new PrivateFontCollection();
+            PrivateFontCollection pfc2 = new PrivateFontCollection();
+            pfc.AddFontFile("P:\\Facultate\\Proict IP Final\\Vrei-sa-fii-inginer\\Fonts\\OriginTech personal use.tff");
+            pfc2.AddFontFile("P:\\Facultate\\Proict IP Final\\Vrei-sa-fii-inginer\\Fonts\\klavika-medium.tff");
+            labelMaterie.Font = new Font(pfc.Families[0], 24, FontStyle.Regular);
+            labelTimer.Font = new Font(pfc.Families[0], 22, FontStyle.Regular);
+            labelIntrebare.Font = new Font(pfc.Families[0], 22, FontStyle.Regular);
+            
+            buttonRaspuns1.Font = new Font(pfc2.Families[0], 11, FontStyle.Regular);
+            buttonRaspuns2.Font = new Font(pfc2.Families[0], 11, FontStyle.Regular);
+            buttonRaspuns3.Font = new Font(pfc2.Families[0], 11, FontStyle.Regular);
+            buttonRaspuns4.Font = new Font(pfc2.Families[0], 11, FontStyle.Regular);
+
         }
     }
 }
