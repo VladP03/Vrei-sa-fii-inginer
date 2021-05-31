@@ -37,6 +37,8 @@ namespace InterfataQuestions
                 int points = Convert.ToInt32(this.textBoxPuncte.Text);
 
                 InsertInto.Records(_connectionToOracleDB, name, points);
+
+                Application.Exit();
             }
             catch (ConnectionException exception)
             {
@@ -48,16 +50,6 @@ namespace InterfataQuestions
                 MessageBox.Show(exception.Message);
                 Application.Exit();
             }
-            finally
-            {
-                if (_connectionToOracleDB != null)
-                {
-                    _connectionToOracleDB.closeConnection();
-                    _connectionToOracleDB = null;
-                }
-            }
-
-            Application.Exit();
         }
 
         private void buttonMain_Click(object sender, EventArgs e)
@@ -80,14 +72,6 @@ namespace InterfataQuestions
             {
                 MessageBox.Show(exception.Message);
                 Application.Exit();
-            }
-            finally
-            {
-                if (_connectionToOracleDB != null)
-                {
-                    _connectionToOracleDB.closeConnection();
-                    _connectionToOracleDB = null;
-                }
             }
 
             FormBeginning formBeginning = new FormBeginning();

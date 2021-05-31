@@ -58,14 +58,6 @@ namespace InterfataQuestions
                 MessageBox.Show(exception.Message);
                 Application.Exit();
             }
-            finally
-            {
-                if (_connectionToOracleDB != null)
-                {
-                    _connectionToOracleDB.closeConnection();
-                    _connectionToOracleDB = null;
-                }
-            }
         }
 
         private void buttonMain_Click(object sender, EventArgs e)
