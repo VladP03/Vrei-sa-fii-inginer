@@ -29,6 +29,7 @@ namespace InterfataQuestions
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFinish));
             this.buttonExit = new System.Windows.Forms.Button();
             this.textBoxPuncte = new System.Windows.Forms.TextBox();
             this.buttonMain = new System.Windows.Forms.Button();
@@ -39,68 +40,99 @@ namespace InterfataQuestions
             // 
             // buttonExit
             // 
-            this.buttonExit.Location = new System.Drawing.Point(301, 328);
+            this.buttonExit.BackColor = System.Drawing.Color.Transparent;
+            this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonExit.Font = new System.Drawing.Font("Origin Tech Demo", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExit.ForeColor = System.Drawing.Color.DeepPink;
+            this.buttonExit.Location = new System.Drawing.Point(489, 405);
+            this.buttonExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(75, 23);
+            this.buttonExit.Size = new System.Drawing.Size(100, 28);
             this.buttonExit.TabIndex = 0;
             this.buttonExit.Text = "Exit";
-            this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.UseVisualStyleBackColor = false;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // textBoxPuncte
             // 
-            this.textBoxPuncte.Location = new System.Drawing.Point(276, 71);
+            this.textBoxPuncte.BackColor = System.Drawing.Color.White;
+            this.textBoxPuncte.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxPuncte.Font = new System.Drawing.Font("Origin Tech Demo", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPuncte.ForeColor = System.Drawing.Color.DeepPink;
+            this.textBoxPuncte.Location = new System.Drawing.Point(458, 127);
+            this.textBoxPuncte.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxPuncte.Name = "textBoxPuncte";
-            this.textBoxPuncte.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPuncte.Size = new System.Drawing.Size(155, 29);
             this.textBoxPuncte.TabIndex = 1;
+            this.textBoxPuncte.TextChanged += new System.EventHandler(this.textBoxPuncte_TextChanged);
             // 
             // buttonMain
             // 
-            this.buttonMain.Location = new System.Drawing.Point(301, 231);
+            this.buttonMain.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMain.Font = new System.Drawing.Font("Origin Tech Demo", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMain.ForeColor = System.Drawing.Color.DeepPink;
+            this.buttonMain.Location = new System.Drawing.Point(450, 320);
+            this.buttonMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonMain.Name = "buttonMain";
-            this.buttonMain.Size = new System.Drawing.Size(75, 23);
+            this.buttonMain.Size = new System.Drawing.Size(177, 42);
             this.buttonMain.TabIndex = 2;
             this.buttonMain.Text = "Main";
-            this.buttonMain.UseVisualStyleBackColor = true;
+            this.buttonMain.UseVisualStyleBackColor = false;
             this.buttonMain.Click += new System.EventHandler(this.buttonMain_Click);
             // 
             // textBoxUsername
             // 
-            this.textBoxUsername.Location = new System.Drawing.Point(252, 130);
+            this.textBoxUsername.Font = new System.Drawing.Font("Origin Tech Demo", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUsername.ForeColor = System.Drawing.Color.DeepPink;
+            this.textBoxUsername.Location = new System.Drawing.Point(392, 239);
+            this.textBoxUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(165, 20);
+            this.textBoxUsername.Size = new System.Drawing.Size(288, 29);
             this.textBoxUsername.TabIndex = 3;
             // 
             // labelPuncte
             // 
             this.labelPuncte.AutoSize = true;
-            this.labelPuncte.Location = new System.Drawing.Point(298, 55);
+            this.labelPuncte.BackColor = System.Drawing.Color.Transparent;
+            this.labelPuncte.Font = new System.Drawing.Font("Origin Tech Demo", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPuncte.ForeColor = System.Drawing.Color.DeepPink;
+            this.labelPuncte.Location = new System.Drawing.Point(478, 91);
+            this.labelPuncte.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPuncte.Name = "labelPuncte";
-            this.labelPuncte.Size = new System.Drawing.Size(41, 13);
+            this.labelPuncte.Size = new System.Drawing.Size(123, 25);
             this.labelPuncte.TabIndex = 5;
             this.labelPuncte.Text = "Puncte";
             // 
             // labelUsername
             // 
             this.labelUsername.AutoSize = true;
-            this.labelUsername.Location = new System.Drawing.Point(308, 114);
+            this.labelUsername.BackColor = System.Drawing.Color.Transparent;
+            this.labelUsername.Font = new System.Drawing.Font("Origin Tech Demo", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUsername.ForeColor = System.Drawing.Color.DeepPink;
+            this.labelUsername.Location = new System.Drawing.Point(493, 203);
+            this.labelUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelUsername.Name = "labelUsername";
-            this.labelUsername.Size = new System.Drawing.Size(29, 13);
+            this.labelUsername.Size = new System.Drawing.Size(90, 26);
             this.labelUsername.TabIndex = 6;
             this.labelUsername.Text = "User";
             // 
             // FormFinish
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.labelUsername);
             this.Controls.Add(this.labelPuncte);
             this.Controls.Add(this.textBoxUsername);
             this.Controls.Add(this.buttonMain);
             this.Controls.Add(this.textBoxPuncte);
             this.Controls.Add(this.buttonExit);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormFinish";
             this.Text = "FormFinish";
             this.ResumeLayout(false);

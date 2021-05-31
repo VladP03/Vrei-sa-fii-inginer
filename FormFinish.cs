@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,22 @@ namespace InterfataQuestions
         public FormFinish(int puncte)
         {
             InitializeComponent();
+            try
+            {
+                PrivateFontCollection pfc = new PrivateFontCollection();
+                pfc.AddFontFile("P:\\Facultate\\Proict IP Final\\Vrei-sa-fii-inginer\\Fonts\\OriginTech.ttf");
+                labelPuncte.Font = new Font(pfc.Families[0], 20, FontStyle.Regular);
+                textBoxPuncte.Font = new Font(pfc.Families[0], 15, FontStyle.Regular);
+                labelUsername.Font = new Font(pfc.Families[0], 20, FontStyle.Regular);
+                textBoxUsername.Font = new Font(pfc.Families[0], 15, FontStyle.Regular);
+                buttonMain.Font = new Font(pfc.Families[0], 20, FontStyle.Regular);
+                buttonExit.Font = new Font(pfc.Families[0], 15, FontStyle.Regular);
+            }
+            catch
+            {
+
+            }
+
             textBoxPuncte.ReadOnly = true;
             textBoxPuncte.Text = puncte.ToString();
         }
@@ -93,6 +110,11 @@ namespace InterfataQuestions
             FormBeginning formBeginning = new FormBeginning();
             formBeginning.Show();
             this.Close();
+        }
+
+        private void textBoxPuncte_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

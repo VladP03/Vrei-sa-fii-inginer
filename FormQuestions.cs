@@ -214,7 +214,7 @@ namespace InterfataQuestions
         {
             try
             {
-/*                PrivateFontCollection pfc = new PrivateFontCollection();
+                PrivateFontCollection pfc = new PrivateFontCollection();
                 PrivateFontCollection pfc2 = new PrivateFontCollection();
                 pfc.AddFontFile("D:\\programe\\repository\\IP\\Vrei-sa-fii-inginer\\Fonts\\OriginTech.ttf");
                 pfc2.AddFontFile("D:\\programe\\repository\\IP\\Vrei-sa-fii-inginer\\Fonts\\klavika-medium.otf");
@@ -225,7 +225,7 @@ namespace InterfataQuestions
                 buttonRaspuns1.Font = new Font(pfc2.Families[0], 11, FontStyle.Regular);
                 buttonRaspuns2.Font = new Font(pfc2.Families[0], 11, FontStyle.Regular);
                 buttonRaspuns3.Font = new Font(pfc2.Families[0], 11, FontStyle.Regular);
-                buttonRaspuns4.Font = new Font(pfc2.Families[0], 11, FontStyle.Regular);*/
+                buttonRaspuns4.Font = new Font(pfc2.Families[0], 11, FontStyle.Regular);
             } catch 
             {
                 

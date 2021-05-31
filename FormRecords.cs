@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,6 +28,23 @@ namespace InterfataQuestions
 
             try
             {
+                PrivateFontCollection pfc = new PrivateFontCollection();
+                pfc.AddFontFile("P:\\Facultate\\Proict IP Final\\Vrei-sa-fii-inginer\\Fonts\\OriginTech.ttf");
+                labelFirstScore.Font = new Font(pfc.Families[0], 20, FontStyle.Regular);
+                labelFirstUser.Font = new Font(pfc.Families[0], 15, FontStyle.Regular);
+                labelSecondScore.Font = new Font(pfc.Families[0], 20, FontStyle.Regular);
+                labelSecondUser.Font = new Font(pfc.Families[0], 15, FontStyle.Regular);
+                labelThirdScore.Font = new Font(pfc.Families[0], 20, FontStyle.Regular);
+                labelThirdUser.Font = new Font(pfc.Families[0], 15, FontStyle.Regular);
+                buttonMain.Font = new Font(pfc.Families[0], 15, FontStyle.Regular);
+            }
+            catch
+            {
+
+            }
+
+            try
+            {
                 _connectionToOracleDB = Connection.createConnection();
 
                 _records = SelectAll.FromRecords(_connectionToOracleDB);
@@ -35,7 +53,7 @@ namespace InterfataQuestions
                     case 0:
                         break;
                     case 1:
-                        textBoxFirst.Text = _records.ElementAt(0).Name.ToString() + " puncte: " + _records.ElementAt(0).Points.ToString();
+                        labelFirstScore.Text = _records.ElementAt(0).Name.ToString() + " puncte: " + _records.ElementAt(0).Points.ToString();
                         break;
                     case 2:
                         textBoxFirst.Text = _records.ElementAt(0).Name.ToString() + " puncte: " + _records.ElementAt(0).Points.ToString();
