@@ -31,6 +31,7 @@ namespace DataBase.Queries
         /// <param name="connection"> connection string for Oracle db </param>
         /// <param name="name"> name of the player </param>
         /// <param name="points"> total points he get right </param>
+        /// </summary>
         public static void Records(Connection connection, string name, int points)
         {
             OracleConnection connectionString;
