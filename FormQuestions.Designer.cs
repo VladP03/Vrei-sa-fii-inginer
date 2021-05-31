@@ -51,7 +51,7 @@ namespace InterfataQuestions
             // 
             this.labelMaterie.BackColor = System.Drawing.Color.Transparent;
             this.labelMaterie.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.labelMaterie.Font = new System.Drawing.Font("Origin Tech Demo", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMaterie.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMaterie.ForeColor = System.Drawing.Color.DeepPink;
             this.labelMaterie.Location = new System.Drawing.Point(90, -22);
             this.labelMaterie.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
@@ -65,12 +65,12 @@ namespace InterfataQuestions
             // 
             this.labelIntrebare.BackColor = System.Drawing.Color.Transparent;
             this.labelIntrebare.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.labelIntrebare.Font = new System.Drawing.Font("Origin Tech Demo", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIntrebare.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelIntrebare.ForeColor = System.Drawing.Color.DeepPink;
-            this.labelIntrebare.Location = new System.Drawing.Point(-202, 134);
+            this.labelIntrebare.Location = new System.Drawing.Point(278, 160);
             this.labelIntrebare.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.labelIntrebare.Name = "labelIntrebare";
-            this.labelIntrebare.Size = new System.Drawing.Size(1944, 279);
+            this.labelIntrebare.Size = new System.Drawing.Size(987, 243);
             this.labelIntrebare.TabIndex = 1;
             this.labelIntrebare.Text = "Intrebare?";
             this.labelIntrebare.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -124,7 +124,7 @@ namespace InterfataQuestions
             this.buttonRaspuns1.BackColor = System.Drawing.Color.DodgerBlue;
             this.buttonRaspuns1.FlatAppearance.BorderSize = 0;
             this.buttonRaspuns1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRaspuns1.Font = new System.Drawing.Font("Klavika Md", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRaspuns1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonRaspuns1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonRaspuns1.Location = new System.Drawing.Point(353, 541);
             this.buttonRaspuns1.Name = "buttonRaspuns1";
@@ -186,7 +186,7 @@ namespace InterfataQuestions
             // labelTimer
             // 
             this.labelTimer.BackColor = System.Drawing.Color.Transparent;
-            this.labelTimer.Font = new System.Drawing.Font("Origin Tech Demo", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTimer.ForeColor = System.Drawing.Color.DeepPink;
             this.labelTimer.Location = new System.Drawing.Point(703, 82);
             this.labelTimer.Name = "labelTimer";

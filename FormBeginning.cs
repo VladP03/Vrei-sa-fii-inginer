@@ -36,12 +36,18 @@ namespace InterfataQuestions
 
         private void FormBeginning_Load(object sender, EventArgs e)
         {
-            PrivateFontCollection pfc = new PrivateFontCollection();
-            pfc.AddFontFile("P:\\Facultate\\Proict IP Final\\Vrei-sa-fii-inginer\\Fonts\\OriginTech personal use.tff");
-            buttonPlay.Font = new Font(pfc.Families[0], 17, FontStyle.Regular);
-            buttonRecords.Font = new Font(pfc.Families[0], 17, FontStyle.Regular);
-            buttonHelp.Font = new Font(pfc.Families[0], 17, FontStyle.Regular);
-            buttonExit.Font = new Font(pfc.Families[0], 17, FontStyle.Regular);
+            try
+            {
+                PrivateFontCollection pfc = new PrivateFontCollection();
+                pfc.AddFontFile("D:\\programe\\repository\\IP\\Vrei-sa-fii-inginer\\Fonts\\OriginTech.ttf");
+                buttonPlay.Font = new Font(pfc.Families[0], 17, FontStyle.Regular);
+                buttonRecords.Font = new Font(pfc.Families[0], 17, FontStyle.Regular);
+                buttonHelp.Font = new Font(pfc.Families[0], 17, FontStyle.Regular);
+                buttonExit.Font = new Font(pfc.Families[0], 17, FontStyle.Regular);
+            } catch
+            {
+
+            }
         }
     }
 }

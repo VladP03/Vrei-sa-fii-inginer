@@ -33,7 +33,15 @@ namespace InterfataQuestions
             {
                 _connectionToOracleDB = Connection.createConnection();
 
-                string name = textBoxUsername.Text;
+                string name = null;
+                if (textBoxUsername.Text != "")
+                {
+                    name = textBoxUsername.Text;
+                } else
+                {
+                    name = "undefined";
+                }
+
                 int points = Convert.ToInt32(this.textBoxPuncte.Text);
 
                 InsertInto.Records(_connectionToOracleDB, name, points);
@@ -58,7 +66,15 @@ namespace InterfataQuestions
             {
                 _connectionToOracleDB = Connection.createConnection();
 
-                string name = textBoxUsername.Text;
+                string name = null;
+                if (textBoxUsername.Text != "")
+                {
+                    name = textBoxUsername.Text;
+                }
+                else
+                {
+                    name = "undefined";
+                }
                 int points = Convert.ToInt32(this.textBoxPuncte.Text);
 
                 InsertInto.Records(_connectionToOracleDB, name, points);
