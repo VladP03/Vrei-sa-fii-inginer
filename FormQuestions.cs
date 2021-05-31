@@ -13,7 +13,7 @@ using System.Windows.Forms;
 using DataBase.ConnectionToOracleDB;
 using DataBase.Entities;
 using DataBase.Exceptions;
-using DataBase.Querys;
+using DataBase.Queries;
 
 // Shuffle
 using Shuffle;
@@ -46,19 +46,18 @@ namespace InterfataQuestions
                     Randomizare.Shuffle(_questions);
                 }
 
-                //List<Records> records = SelectAll.FromRecords(_connectionToOracleDB);
                 ShowMaterieIntrebareRaspunsuri(_countQuestion);
 
             }
             catch (ConnectionException exception)
             {
                 MessageBox.Show(exception.Message);
-                return;
+                Application.Exit();
             }
             catch (SelectAllFromException exception)
             {
                 MessageBox.Show(exception.Message);
-                return;
+                Application.Exit();
             }
 
             _timer = new Timer();

@@ -1,9 +1,9 @@
 ﻿/**************************************************************************
  *                                                                        *
- *  File:        ConnectionException.cs                                   *
+ *  File:        SelectAllFromException.cs                                *
  *  Copyright:   (c) 2021, Paraschiv Florin-Vladut                        *
  *  E-mail:      florin-vladut.paraschiv@student.tuiasi.ro                *
- *  Description: Exception for connection to Oracle db                    *
+ *  Description: Exception for selecting from Oracle database             *
  *                                                                        *
  *                                                                        *
  *  This code and information is provided "as is" without warranty of     *
@@ -18,15 +18,16 @@ using System;
 
 namespace DataBase.Exceptions
 {
-    public class ConnectionException : Exception
+    public class SelectAllFromException : Exception
     {
         #region Constructor
         /// <summary>
         /// Public constructor
         /// </summary>
         /// <param name="message"> the message of the exception </param>
-        public ConnectionException(string message) : base(message)
+        public SelectAllFromException(string message) : base(message)
         {
+
         }
         #endregion
     }

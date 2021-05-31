@@ -46,6 +46,7 @@ namespace InterfataQuestions
             this.buttonPlay.Font = new System.Drawing.Font("Origin Tech Demo", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPlay.ForeColor = System.Drawing.Color.DeepPink;
             this.buttonPlay.Location = new System.Drawing.Point(0, 0);
+            this.buttonPlay.Location = new System.Drawing.Point(415, 168);
             this.buttonPlay.Name = "buttonPlay";
             this.buttonPlay.Size = new System.Drawing.Size(168, 67);
             this.buttonPlay.TabIndex = 0;
@@ -61,6 +62,7 @@ namespace InterfataQuestions
             this.buttonRecords.Font = new System.Drawing.Font("Origin Tech Demo", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonRecords.ForeColor = System.Drawing.Color.DeepPink;
             this.buttonRecords.Location = new System.Drawing.Point(0, 67);
+            this.buttonRecords.Location = new System.Drawing.Point(415, 247);
             this.buttonRecords.Name = "buttonRecords";
             this.buttonRecords.Size = new System.Drawing.Size(168, 67);
             this.buttonRecords.TabIndex = 1;
@@ -76,6 +78,7 @@ namespace InterfataQuestions
             this.buttonHelp.Font = new System.Drawing.Font("Origin Tech Demo", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonHelp.ForeColor = System.Drawing.Color.DeepPink;
             this.buttonHelp.Location = new System.Drawing.Point(0, 134);
+            this.buttonHelp.Location = new System.Drawing.Point(415, 320);
             this.buttonHelp.Name = "buttonHelp";
             this.buttonHelp.Size = new System.Drawing.Size(168, 67);
             this.buttonHelp.TabIndex = 2;
@@ -90,6 +93,7 @@ namespace InterfataQuestions
             this.buttonExit.Font = new System.Drawing.Font("Origin Tech Demo", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonExit.ForeColor = System.Drawing.Color.DeepPink;
             this.buttonExit.Location = new System.Drawing.Point(98, 498);
+            this.buttonExit.Location = new System.Drawing.Point(415, 392);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(93, 41);
             this.buttonExit.TabIndex = 3;
