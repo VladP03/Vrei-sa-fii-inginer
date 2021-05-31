@@ -5,6 +5,9 @@ namespace InterfataQuestions
 {
     public partial class FormBeginning : Form
     {
+        FormQuestions _formQuestions = null;
+        FormRecords _formRecords = null;
+
         public FormBeginning()
         {
             InitializeComponent();
@@ -12,8 +15,8 @@ namespace InterfataQuestions
 
         private void buttonPlay_Click(object sender, EventArgs e)
         {
-            FormQuestions formQuestions = new FormQuestions();
-            formQuestions.Show();
+            _formQuestions = new FormQuestions();
+            _formQuestions.Show();
             this.Hide();
         }
 
@@ -24,8 +27,8 @@ namespace InterfataQuestions
 
         private void buttonRecords_Click(object sender, EventArgs e)
         {
-            FormRecords formRecords = new FormRecords();
-            formRecords.Show();
+            _formRecords = new FormRecords();
+            _formRecords.Show();
             this.Hide();
         }
     }

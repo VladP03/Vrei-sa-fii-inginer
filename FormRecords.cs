@@ -25,30 +25,46 @@ namespace InterfataQuestions
         {
             InitializeComponent();
 
-            //textBoxFirst.Text = "";
-            //textBoxSecond.Text = "";
-            //textBoxThird.Text = "";
-
             try
             {
                 _connectionToOracleDB = Connection.createConnection();
 
                 _records = SelectAll.FromRecords(_connectionToOracleDB);
 
-                textBoxFirst.Text = _records.ElementAt(0).Name.ToString() + " puncte: " + _records.ElementAt(0).Points.ToString();
-                textBoxSecond.Text = _records.ElementAt(1).Name.ToString() + " puncte: " + _records.ElementAt(1).Points.ToString();
-                textBoxThird.Text = _records.ElementAt(2).Name.ToString() + " puncte: " + _records.ElementAt(2).Points.ToString();
-
+                switch(_records.Count()) {
+                    case 0:
+                        break;
+                    case 1:
+                        textBoxFirst.Text = _records.ElementAt(0).Name.ToString() + " puncte: " + _records.ElementAt(0).Points.ToString();
+                        break;
+                    case 2:
+                        textBoxFirst.Text = _records.ElementAt(0).Name.ToString() + " puncte: " + _records.ElementAt(0).Points.ToString();
+                        textBoxSecond.Text = _records.ElementAt(1).Name.ToString() + " puncte: " + _records.ElementAt(1).Points.ToString();
+                        break;
+                    default:
+                        textBoxFirst.Text = _records.ElementAt(0).Name.ToString() + " puncte: " + _records.ElementAt(0).Points.ToString();
+                        textBoxSecond.Text = _records.ElementAt(1).Name.ToString() + " puncte: " + _records.ElementAt(1).Points.ToString();
+                        textBoxThird.Text = _records.ElementAt(2).Name.ToString() + " puncte: " + _records.ElementAt(2).Points.ToString();
+                        break;
+                }
             }
             catch (ConnectionException exception)
             {
                 MessageBox.Show(exception.Message);
-                return;
+                Application.Exit();
             }
             catch (SelectAllFromException exception)
             {
                 MessageBox.Show(exception.Message);
-                return;
+                Application.Exit();
+            }
+            finally
+            {
+                if (_connectionToOracleDB != null)
+                {
+                    _connectionToOracleDB.closeConnection();
+                    _connectionToOracleDB = null;
+                }
             }
         }
 

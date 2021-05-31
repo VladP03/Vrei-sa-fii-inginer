@@ -33,9 +33,19 @@ namespace DataBase.Queries
         /// <param name="points"> total points he get right </param>
         public static void Records(Connection connection, string name, int points)
         {
+            OracleConnection connectionString;
+
             try
             {
-                OracleConnection connectionString = connection.ConnectionString;
+                connectionString = connection.ConnectionString;
+            }
+            catch (Exception)
+            {
+                throw new ConnectionException("PROBLEM WITH CONNECTION WITH ORACLE DATABASE at InsertIntoRecords");
+            }
+
+            try
+            {
                 OracleCommand command = connectionString.CreateCommand();
                 OracleTransaction transaction = connectionString.BeginTransaction(IsolationLevel.ReadCommitted);
 
@@ -52,6 +62,7 @@ namespace DataBase.Queries
             {
                 throw new InsertIntoException("PROBLEM WITH InsertIntoRecords");
             }
+
         }
         #endregion
     }

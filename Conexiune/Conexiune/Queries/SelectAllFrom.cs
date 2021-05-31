@@ -33,11 +33,20 @@ namespace DataBase.Queries
         /// <returns> An list of records </returns>
         public static List<Records> FromRecords(Connection connection)
         {
+            OracleConnection connectionString;
+
             try
             {
-                OracleConnection connectionString = connection.ConnectionString;
-                List<Records> records = new List<Records>();
+                connectionString = connection.ConnectionString;
+            } 
+            catch (Exception)
+            {
+                throw new ConnectionException("PROBLEM WITH CONNECTION WITH ORACLE DATABASE at SelectAllFromRecords");
+            }
 
+            try
+            {
+                List<Records> records = new List<Records>();
                 OracleCommand command = new OracleCommand(
                     "Select * FROM records ORDER BY points DESC",
                     connectionString);
@@ -66,11 +75,21 @@ namespace DataBase.Queries
         /// <returns> An list of questions </returns>
         public static List<Questions> FromQuestions(Connection connection)
         {
+            OracleConnection connectionString;
+
             try
             {
-                OracleConnection connectionString = connection.ConnectionString;
-                List<Questions> questions = new List<Questions>();
+                connectionString = connection.ConnectionString;
+            }
+            catch (Exception)
+            {
+                throw new ConnectionException("PROBLEM WITH CONNECTION WITH ORACLE DATABASE at SelectAllFromQuestions");
+            }
 
+            try
+            {
+                List<Questions> questions = new List<Questions>();
+                
                 OracleCommand command = new OracleCommand(
                     "Select * FROM questions",
                     connectionString);

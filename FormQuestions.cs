@@ -45,19 +45,26 @@ namespace InterfataQuestions
                     Randomizare.Shuffle(_questions);
                 }
 
-                //List<Records> records = SelectAll.FromRecords(_connectionToOracleDB);
                 ShowMaterieIntrebareRaspunsuri(_countQuestion);
 
             }
             catch (ConnectionException exception)
             {
                 MessageBox.Show(exception.Message);
-                return;
+                Application.Exit();
             }
             catch (SelectAllFromException exception)
             {
                 MessageBox.Show(exception.Message);
-                return;
+                Application.Exit();
+            }
+            finally
+            {
+                if (_connectionToOracleDB != null)
+                {
+                    _connectionToOracleDB.closeConnection();
+                    _connectionToOracleDB = null;
+                }
             }
 
             _timer = new Timer();

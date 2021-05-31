@@ -75,6 +75,7 @@ namespace DataBase.ConnectionToOracleDB
                 {
                     _connectionString.Close();
                     Console.WriteLine("Closed connection to oracle db succesfully");
+                    _singleInstance = null;
                 }
             }
             catch
