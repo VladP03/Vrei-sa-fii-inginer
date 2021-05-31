@@ -43,25 +43,26 @@ namespace InterfataQuestions
             // 
             this.buttonMain.BackColor = System.Drawing.Color.Transparent;
             this.buttonMain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMain.Font = new System.Drawing.Font("Origin Tech Demo", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMain.ForeColor = System.Drawing.Color.DeepPink;
-            this.buttonMain.Location = new System.Drawing.Point(454, 499);
-            this.buttonMain.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonMain.Location = new System.Drawing.Point(340, 405);
             this.buttonMain.Name = "buttonMain";
-            this.buttonMain.Size = new System.Drawing.Size(177, 42);
+            this.buttonMain.Size = new System.Drawing.Size(133, 34);
             this.buttonMain.TabIndex = 4;
             this.buttonMain.Text = "Main";
             this.buttonMain.UseVisualStyleBackColor = false;
+            this.buttonMain.Click += new System.EventHandler(this.buttonMain_Click);
             // 
             // labelFirstUser
             // 
             this.labelFirstUser.BackColor = System.Drawing.Color.Transparent;
             this.labelFirstUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelFirstUser.Font = new System.Drawing.Font("Origin Tech Demo", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFirstUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFirstUser.ForeColor = System.Drawing.Color.Black;
-            this.labelFirstUser.Location = new System.Drawing.Point(371, 169);
+            this.labelFirstUser.Location = new System.Drawing.Point(278, 137);
+            this.labelFirstUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelFirstUser.Name = "labelFirstUser";
-            this.labelFirstUser.Size = new System.Drawing.Size(333, 39);
+            this.labelFirstUser.Size = new System.Drawing.Size(250, 32);
             this.labelFirstUser.TabIndex = 5;
             this.labelFirstUser.Text = "FirstPlace";
             this.labelFirstUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -70,11 +71,12 @@ namespace InterfataQuestions
             // 
             this.labelFirstScore.BackColor = System.Drawing.Color.Transparent;
             this.labelFirstScore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelFirstScore.Font = new System.Drawing.Font("Origin Tech Demo", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFirstScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFirstScore.ForeColor = System.Drawing.Color.Black;
-            this.labelFirstScore.Location = new System.Drawing.Point(371, 222);
+            this.labelFirstScore.Location = new System.Drawing.Point(278, 180);
+            this.labelFirstScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelFirstScore.Name = "labelFirstScore";
-            this.labelFirstScore.Size = new System.Drawing.Size(333, 39);
+            this.labelFirstScore.Size = new System.Drawing.Size(250, 32);
             this.labelFirstScore.TabIndex = 6;
             this.labelFirstScore.Text = "100";
             this.labelFirstScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -83,11 +85,12 @@ namespace InterfataQuestions
             // 
             this.labelSecondScore.BackColor = System.Drawing.Color.Transparent;
             this.labelSecondScore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelSecondScore.Font = new System.Drawing.Font("Origin Tech Demo", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSecondScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSecondScore.ForeColor = System.Drawing.Color.Black;
-            this.labelSecondScore.Location = new System.Drawing.Point(3, 287);
+            this.labelSecondScore.Location = new System.Drawing.Point(2, 221);
+            this.labelSecondScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelSecondScore.Name = "labelSecondScore";
-            this.labelSecondScore.Size = new System.Drawing.Size(333, 39);
+            this.labelSecondScore.Size = new System.Drawing.Size(250, 32);
             this.labelSecondScore.TabIndex = 8;
             this.labelSecondScore.Text = "50";
             this.labelSecondScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -96,11 +99,12 @@ namespace InterfataQuestions
             // 
             this.labelSecondUser.BackColor = System.Drawing.Color.Transparent;
             this.labelSecondUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelSecondUser.Font = new System.Drawing.Font("Origin Tech Demo", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSecondUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSecondUser.ForeColor = System.Drawing.Color.Black;
-            this.labelSecondUser.Location = new System.Drawing.Point(3, 234);
+            this.labelSecondUser.Location = new System.Drawing.Point(2, 183);
+            this.labelSecondUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelSecondUser.Name = "labelSecondUser";
-            this.labelSecondUser.Size = new System.Drawing.Size(333, 39);
+            this.labelSecondUser.Size = new System.Drawing.Size(250, 32);
             this.labelSecondUser.TabIndex = 7;
             this.labelSecondUser.Text = "SecondPlace";
             this.labelSecondUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -109,11 +113,12 @@ namespace InterfataQuestions
             // 
             this.labelThirdScore.BackColor = System.Drawing.Color.Transparent;
             this.labelThirdScore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelThirdScore.Font = new System.Drawing.Font("Origin Tech Demo", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelThirdScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelThirdScore.ForeColor = System.Drawing.Color.Black;
-            this.labelThirdScore.Location = new System.Drawing.Point(726, 331);
+            this.labelThirdScore.Location = new System.Drawing.Point(544, 269);
+            this.labelThirdScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelThirdScore.Name = "labelThirdScore";
-            this.labelThirdScore.Size = new System.Drawing.Size(333, 39);
+            this.labelThirdScore.Size = new System.Drawing.Size(250, 32);
             this.labelThirdScore.TabIndex = 10;
             this.labelThirdScore.Text = "30";
             this.labelThirdScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -122,22 +127,23 @@ namespace InterfataQuestions
             // 
             this.labelThirdUser.BackColor = System.Drawing.Color.Transparent;
             this.labelThirdUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelThirdUser.Font = new System.Drawing.Font("Origin Tech Demo", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelThirdUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelThirdUser.ForeColor = System.Drawing.Color.Black;
-            this.labelThirdUser.Location = new System.Drawing.Point(726, 278);
+            this.labelThirdUser.Location = new System.Drawing.Point(544, 226);
+            this.labelThirdUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelThirdUser.Name = "labelThirdUser";
-            this.labelThirdUser.Size = new System.Drawing.Size(333, 39);
+            this.labelThirdUser.Size = new System.Drawing.Size(250, 32);
             this.labelThirdUser.TabIndex = 9;
             this.labelThirdUser.Text = "ThirdPlace";
             this.labelThirdUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FormRecords
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.labelThirdScore);
             this.Controls.Add(this.labelThirdUser);
             this.Controls.Add(this.labelSecondScore);
@@ -147,8 +153,8 @@ namespace InterfataQuestions
             this.Controls.Add(this.buttonMain);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormRecords";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormRecords";
             this.ResumeLayout(false);
 

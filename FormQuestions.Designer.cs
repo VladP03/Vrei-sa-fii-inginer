@@ -41,6 +41,7 @@ namespace InterfataQuestions
             this.buttonRaspuns3 = new System.Windows.Forms.Button();
             this.buttonRaspuns4 = new System.Windows.Forms.Button();
             this.labelTimer = new System.Windows.Forms.Label();
+            this.labelNumar = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRaspuns1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRaspuns3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRaspuns2)).BeginInit();
@@ -196,6 +197,18 @@ namespace InterfataQuestions
             this.labelTimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.labelTimer.Click += new System.EventHandler(this.labelTimer_Click);
             // 
+            // labelNumar
+            // 
+            this.labelNumar.BackColor = System.Drawing.Color.Transparent;
+            this.labelNumar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNumar.ForeColor = System.Drawing.Color.DeepPink;
+            this.labelNumar.Location = new System.Drawing.Point(639, 160);
+            this.labelNumar.Name = "labelNumar";
+            this.labelNumar.Size = new System.Drawing.Size(252, 38);
+            this.labelNumar.TabIndex = 23;
+            this.labelNumar.Text = "Nr. crt / intrebare";
+            this.labelNumar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // FormQuestions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
@@ -203,6 +216,7 @@ namespace InterfataQuestions
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1540, 845);
+            this.Controls.Add(this.labelNumar);
             this.Controls.Add(this.labelTimer);
             this.Controls.Add(this.buttonRaspuns4);
             this.Controls.Add(this.buttonRaspuns3);
@@ -246,6 +260,7 @@ namespace InterfataQuestions
         private System.Windows.Forms.Button buttonRaspuns3;
         private System.Windows.Forms.Button buttonRaspuns4;
         private System.Windows.Forms.Label labelTimer;
+        private System.Windows.Forms.Label labelNumar;
     }
 }
 

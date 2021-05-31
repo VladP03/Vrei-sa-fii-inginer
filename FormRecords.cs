@@ -29,7 +29,7 @@ namespace InterfataQuestions
             try
             {
                 PrivateFontCollection pfc = new PrivateFontCollection();
-                pfc.AddFontFile("P:\\Facultate\\Proict IP Final\\Vrei-sa-fii-inginer\\Fonts\\OriginTech.ttf");
+                pfc.AddFontFile("D:\\programe\\repository\\IP\\Vrei-sa-fii-inginer\\Fonts\\OriginTech.ttf");
                 labelFirstScore.Font = new Font(pfc.Families[0], 20, FontStyle.Regular);
                 labelFirstUser.Font = new Font(pfc.Families[0], 15, FontStyle.Regular);
                 labelSecondScore.Font = new Font(pfc.Families[0], 20, FontStyle.Regular);
@@ -53,16 +53,22 @@ namespace InterfataQuestions
                     case 0:
                         break;
                     case 1:
-                        labelFirstScore.Text = _records.ElementAt(0).Name.ToString() + " puncte: " + _records.ElementAt(0).Points.ToString();
+                        labelFirstUser.Text = _records.ElementAt(0).Name.ToString();
+                        labelFirstScore.Text = _records.ElementAt(0).Points.ToString();
                         break;
                     case 2:
-                        textBoxFirst.Text = _records.ElementAt(0).Name.ToString() + " puncte: " + _records.ElementAt(0).Points.ToString();
-                        textBoxSecond.Text = _records.ElementAt(1).Name.ToString() + " puncte: " + _records.ElementAt(1).Points.ToString();
+                        labelFirstUser.Text = _records.ElementAt(0).Name.ToString();
+                        labelFirstScore.Text = _records.ElementAt(0).Points.ToString();
+                        labelSecondUser.Text = _records.ElementAt(1).Name.ToString();
+                        labelSecondScore.Text = _records.ElementAt(1).Points.ToString();
                         break;
                     default:
-                        textBoxFirst.Text = _records.ElementAt(0).Name.ToString() + " puncte: " + _records.ElementAt(0).Points.ToString();
-                        textBoxSecond.Text = _records.ElementAt(1).Name.ToString() + " puncte: " + _records.ElementAt(1).Points.ToString();
-                        textBoxThird.Text = _records.ElementAt(2).Name.ToString() + " puncte: " + _records.ElementAt(2).Points.ToString();
+                        labelFirstUser.Text = _records.ElementAt(0).Name.ToString();
+                        labelFirstScore.Text = _records.ElementAt(0).Points.ToString();
+                        labelSecondUser.Text = _records.ElementAt(1).Name.ToString();
+                        labelSecondScore.Text = _records.ElementAt(1).Points.ToString();
+                        labelThirdUser.Text = _records.ElementAt(2).Name.ToString();
+                        labelThirdScore.Text = _records.ElementAt(2).Points.ToString();
                         break;
                 }
             }
@@ -83,6 +89,11 @@ namespace InterfataQuestions
             FormBeginning formBeginning = new FormBeginning();
             formBeginning.Show();
             this.Close();
+        }
+
+        private void buttonMain_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

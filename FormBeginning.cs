@@ -16,7 +16,7 @@ namespace InterfataQuestions
             try
             {
                 PrivateFontCollection pfc = new PrivateFontCollection();
-                pfc.AddFontFile("P:\\Facultate\\Proict IP Final\\Vrei-sa-fii-inginer\\Fonts\\OriginTech.ttf");
+                pfc.AddFontFile("D:\\programe\\repository\\IP\\Vrei-sa-fii-inginer\\Fonts\\OriginTech.ttf");
                 buttonPlay.Font = new Font(pfc.Families[0], 17, FontStyle.Regular);
                 buttonRecords.Font = new Font(pfc.Families[0], 17, FontStyle.Regular);
                 buttonHelp.Font = new Font(pfc.Families[0], 17, FontStyle.Regular);
@@ -44,7 +44,7 @@ namespace InterfataQuestions
         {
             _formRecords = new FormRecords();
             _formRecords.Show();
-          //  this.Hide();
+            this.Hide();
         }
 
         private void FormBeginning_Load(object sender, EventArgs e)
