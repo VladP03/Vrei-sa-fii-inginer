@@ -52,7 +52,7 @@ namespace InterfataQuestions
             // 
             this.labelMaterie.BackColor = System.Drawing.Color.Transparent;
             this.labelMaterie.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.labelMaterie.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMaterie.Font = new System.Drawing.Font("Origin Tech Demo", 25.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMaterie.ForeColor = System.Drawing.Color.DeepPink;
             this.labelMaterie.Location = new System.Drawing.Point(90, -22);
             this.labelMaterie.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
@@ -66,7 +66,7 @@ namespace InterfataQuestions
             // 
             this.labelIntrebare.BackColor = System.Drawing.Color.Transparent;
             this.labelIntrebare.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.labelIntrebare.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIntrebare.Font = new System.Drawing.Font("Origin Tech Demo", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelIntrebare.ForeColor = System.Drawing.Color.DeepPink;
             this.labelIntrebare.Location = new System.Drawing.Point(278, 160);
             this.labelIntrebare.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
@@ -125,7 +125,7 @@ namespace InterfataQuestions
             this.buttonRaspuns1.BackColor = System.Drawing.Color.DodgerBlue;
             this.buttonRaspuns1.FlatAppearance.BorderSize = 0;
             this.buttonRaspuns1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRaspuns1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRaspuns1.Font = new System.Drawing.Font("Klavika Md", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonRaspuns1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonRaspuns1.Location = new System.Drawing.Point(353, 541);
             this.buttonRaspuns1.Name = "buttonRaspuns1";
@@ -141,7 +141,7 @@ namespace InterfataQuestions
             this.buttonRaspuns2.BackColor = System.Drawing.Color.DodgerBlue;
             this.buttonRaspuns2.FlatAppearance.BorderSize = 0;
             this.buttonRaspuns2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRaspuns2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRaspuns2.Font = new System.Drawing.Font("Klavika Md", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonRaspuns2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonRaspuns2.Location = new System.Drawing.Point(791, 541);
             this.buttonRaspuns2.Name = "buttonRaspuns2";
@@ -157,7 +157,7 @@ namespace InterfataQuestions
             this.buttonRaspuns3.BackColor = System.Drawing.Color.DodgerBlue;
             this.buttonRaspuns3.FlatAppearance.BorderSize = 0;
             this.buttonRaspuns3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRaspuns3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRaspuns3.Font = new System.Drawing.Font("Klavika Md", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonRaspuns3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonRaspuns3.Location = new System.Drawing.Point(353, 696);
             this.buttonRaspuns3.Name = "buttonRaspuns3";
@@ -173,7 +173,7 @@ namespace InterfataQuestions
             this.buttonRaspuns4.BackColor = System.Drawing.Color.DodgerBlue;
             this.buttonRaspuns4.FlatAppearance.BorderSize = 0;
             this.buttonRaspuns4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRaspuns4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRaspuns4.Font = new System.Drawing.Font("Klavika Md", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonRaspuns4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonRaspuns4.Location = new System.Drawing.Point(791, 696);
             this.buttonRaspuns4.Name = "buttonRaspuns4";
@@ -187,7 +187,7 @@ namespace InterfataQuestions
             // labelTimer
             // 
             this.labelTimer.BackColor = System.Drawing.Color.Transparent;
-            this.labelTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTimer.Font = new System.Drawing.Font("Origin Tech Demo", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTimer.ForeColor = System.Drawing.Color.DeepPink;
             this.labelTimer.Location = new System.Drawing.Point(703, 82);
             this.labelTimer.Name = "labelTimer";
@@ -200,9 +200,9 @@ namespace InterfataQuestions
             // labelNumar
             // 
             this.labelNumar.BackColor = System.Drawing.Color.Transparent;
-            this.labelNumar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNumar.Font = new System.Drawing.Font("Origin Tech Demo", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNumar.ForeColor = System.Drawing.Color.DeepPink;
-            this.labelNumar.Location = new System.Drawing.Point(639, 160);
+            this.labelNumar.Location = new System.Drawing.Point(639, 155);
             this.labelNumar.Name = "labelNumar";
             this.labelNumar.Size = new System.Drawing.Size(252, 38);
             this.labelNumar.TabIndex = 23;
@@ -211,7 +211,7 @@ namespace InterfataQuestions
             // 
             // FormQuestions
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
