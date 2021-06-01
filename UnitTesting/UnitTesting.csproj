@@ -39,8 +39,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Conexiune">
+      <HintPath>..\Conexiune\Conexiune\bin\Release\Conexiune.dll</HintPath>
+    </Reference>
     <Reference Include="InterfataQuestions">
-      <HintPath>..\bin\Debug\InterfataQuestions.exe</HintPath>
+      <HintPath>..\bin\Release\InterfataQuestions.exe</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\MSTest.TestFramework.2.1.1\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
@@ -49,12 +52,13 @@
       <HintPath>..\packages\MSTest.TestFramework.2.1.1\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Shuffle">
-      <HintPath>..\Shuffle\bin\Debug\Shuffle.dll</HintPath>
+      <HintPath>..\Shuffle\bin\Release\Shuffle.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UnitTestDB.cs" />
     <Compile Include="UnitTestInterfaces.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
