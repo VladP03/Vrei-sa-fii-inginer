@@ -1,8 +1,8 @@
 ﻿/**************************************************************************
  *                                                                        *
  *  File:        Questions.cs                                             *
- *  Copyright:   (c) 2021, Paraschiv Florin-Vladut                        *
- *  E-mail:      florin-vladut.paraschiv@student.tuiasi.ro                *
+ *  Copyright:   (c) 2021, Buliga Diana-Marinela                          *
+ *  E-mail:      diana-marinela.buliga@student.tuiasi.ro                  *
  *  Description: Entity object who refer at questions table in database   *
  *                                                                        *
  *                                                                        *

@@ -1,8 +1,8 @@
 ﻿/**************************************************************************
  *                                                                        *
  *  File:        Records.cs                                               *
- *  Copyright:   (c) 2021, Paraschiv Florin-Vladut                        *
- *  E-mail:      florin-vladut.paraschiv@student.tuiasi.ro                *
+ *  Copyright:   (c) 2021, Buliga Diana-Marinela                          *
+ *  E-mail:      diana-marinela.buliga@student.tuiasi.ro                  *
  *  Description: Entity object who refer at records table in database     *
  *                                                                        *
  *                                                                        *
