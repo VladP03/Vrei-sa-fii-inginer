@@ -238,7 +238,6 @@ namespace InterfataQuestions
             this.Padding = new System.Windows.Forms.Padding(10, 10, 10, 0);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "v";
-            this.Load += new System.EventHandler(this.FormQuestions_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRaspuns1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRaspuns3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRaspuns2)).EndInit();

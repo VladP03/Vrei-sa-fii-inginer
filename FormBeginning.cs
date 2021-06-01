@@ -47,9 +47,9 @@ namespace InterfataQuestions
             this.Hide();
         }
 
-        private void FormBeginning_Load(object sender, EventArgs e)
+        private void buttonHelp_Click(object sender, EventArgs e)
         {
-
+            Help.ShowHelp(this, "D:\\programe\\repository\\IP\\Vrei-sa-fii-inginer\\Vrei-sa-fii-inginer.chm");
         }
     }
 }

@@ -211,17 +211,5 @@ namespace InterfataQuestions
             _rightAnswers = 0;
             _countQuestion = 0;
         }
-
-        private void FormQuestions_Load(object sender, EventArgs e)
-        {
-            try
-            {
-
-            } catch 
-            {
-                
-            }
-
-        }
     }
 }
